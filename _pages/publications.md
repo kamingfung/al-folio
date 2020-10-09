@@ -14,7 +14,7 @@ These paper can also be found on my [Google Scholar](https://scholar.google.com/
 
 {% for y in page.years %}
   <h2 class="year">{{y}}</h2>
-  {% bibliography -f papers -q @*[year={{y}}]* %}
+  {% bibliography -f papers -q @*[year={{y}}]*%}
 {% endfor %}
 
 </div>

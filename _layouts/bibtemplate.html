@@ -3,13 +3,13 @@
 
 <div class="row">
   <div class="col-sm-2 abbr">
-  {% if entry.abbr %}
+  <!-- {% if entry.abbr %}
     {% if site.data.venues[entry.abbr] %}
     <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}" target="_blank">{{entry.abbr}}</a></abbr>
     {% else %}
     <abbr class="badge">{{entry.abbr}}</abbr>
     {% endif %}
-  {% endif %}
+  {% endif %} -->
   </div>
 
   <div id="{{entry.key}}" class="col-sm-8">
@@ -64,11 +64,12 @@
     {% endif %}
 
     <div class="links">
+    <!-- fkm: button for DOI -->
+    {% if entry.doi %}
+      <a href="http://dx.doi.org/{{ entry.doi }}" class="doi btn btn-sm z-depth-0" role="button">DOI</a>
+    {% endif %}
     {% if entry.abstract %}
       <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
-    {% endif %}
-    {% if entry.url %}
-      <a href="{{ entry.url }}" class="url btn btn-sm z-depth-0" role="button">URL</a>
     {% endif %}
     {% if entry.arxiv %}
       <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
@@ -122,9 +123,10 @@
     </div>
     {% endif %}
     
-    {% if entry.url %}
-    <div class="url hidden">
-      <p>{{ entry.url }}</p>
+    <!-- fkm: button for URL (auto hidden) -->
+    {% if entry.doi %}
+    <div class="doi hidden">
+      <p>{{ entry.doi }}</p>
     </div>
     {% endif %}
     

@@ -1,13 +1,19 @@
 {% if site.footer_fixed %}
 <footer class="fixed-bottom">
   <div class="container mt-0">
-    &copy; Copyright {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}.
-    {% if site.last_updated %}
-    Last updated: {{ "now" | date: '%B %d, %Y' }}.
-    {% endif %}
-    {% include social.html %} <!-- Social Icons -->
-    <div class="">
-      {{ site.footer_text }}
+    <div class = "row mt-0">
+      <div class = "col">
+        &copy; Copyright {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}.
+        {% include email-logo.html %} <!-- Social Icons -->
+      </div>
+      <div class = "col">
+        {% if site.last_updated %}
+        Last updated: {{ "now" | date: '%B %d, %Y' }}.
+        {% endif %}
+      </div>
+      <div class = "col">
+        {{ site.footer_text }}
+      </div>
     </div>
   </div>
 </footer>

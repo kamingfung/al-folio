@@ -1,14 +1,15 @@
 ---
 layout: post
-title: "python_basics_CESM"
+title: Basic Tasks for Post-processing and Analyzing CESM Outputs
+date: 2020-10-03 15:09:00
+description: an example of a blog post with some code
 tags:
     - python
     - notebook
---- 
-# Basic Tasks for Post-processing and Analyzing CESM Outputs
-Created by Ka Ming Fung (kamingfung@mit.edu)
+---
+*Created by Ka Ming Fung (kamingfung@mit.edu)[mailto:kamingfung@mit.edu]*
 
-Refereneces:
+###Refereneces:
 <br/>
 For general python handling of nc files: https://github.com/geoschem/GEOSChem-
 python-tutorial
@@ -26,7 +27,7 @@ means, and make plots.
 
 **In [1]:**
 
-{% highlight python %}
+{% highlight python  %}
 import numpy as np                    # for better array
 import xarray as xr                   # the major tool to work with NetCDF data!
 {% endhighlight %}
@@ -41,7 +42,7 @@ shell level.
 
 **In [2]:**
 
-{% highlight python %}
+{% highlight python  %}
 %ls _data
 {% endhighlight %}
 
@@ -54,7 +55,7 @@ use of * as a wildcard.
 
 **In [3]:**
 
-{% highlight python %}
+{% highlight python  %}
 ds = xr.open_mfdataset(paths='_data/*.cam.h0.2016-*.nc', combine='by_coords', concat_dim="time")
 
 ds
@@ -67516,7 +67517,7 @@ Then, we "slice" the surface layers out from the big dataset.
 
 **In [5]:**
 
-{% highlight python %}
+{% highlight python  %}
 dr_surf = dr.sel(lev=slice(100, 1000))  # lev is in hPa. Here I assume troposphere is within 1000hPa-100hPa
 
 dr_surf
@@ -68930,7 +68931,7 @@ Do a quick check on the global mean values.
 
 **In [6]:**
 
-{% highlight python %}
+{% highlight python  %}
 print(dr_surf.mean().compute().values)
 {% endhighlight %}
 
@@ -68959,7 +68960,7 @@ To plot variables, we employ the powerful and (most) popular packages:
 
 **In [7]:**
 
-{% highlight python %}
+{% highlight python  %}
 %matplotlib inline
 from matplotlib import pyplot as plt  # for plotting
 {% endhighlight %}
@@ -68969,7 +68970,7 @@ lev, and time).
 
 **In [8]:**
 
-{% highlight python %}
+{% highlight python  %}
 vid = "r_is_shift_1"                  # storing the variable id for easier recall
 
 dr_surf[vid]                          # just to double check if the array is what we want
@@ -69446,7 +69447,7 @@ dl.xr-attrs {
 
 **In [9]:**
 
-{% highlight python %}
+{% highlight python  %}
 # actual plotting codes:
 
 fig = plt.figure(figsize=(14, 4))     # defining the canvas with size 14 x 4
@@ -69464,13 +69465,7 @@ dr_surf[vid].mean(dim=['lev', 'time']).plot()  # two operations happened here, t
 
 
  
-![png]({{ BASE_PATH }}/assets/img/2020-10-03-python_basics_CESM/python_basics_cesm_18_1.png) 
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-0" src="{{ site.baseurl }}/assets/img/2020-10-03-python_basics_CESM/python_basics_cesm_18_1.png">
-    </div>
-</div>
+![png]({{ BASE_PATH }}/assets/img/2020-10-03-python_basics_CESM/python_basics_cesm_18_1.png)
 
  
 Hurray, we got our nice plot. But who would stop here?
@@ -69480,7 +69475,7 @@ Time to play around the codes and make some aesthetic changes.
 
 **In [10]:**
 
-{% highlight python %}
+{% highlight python  %}
 # Change 1: Projection - People have been arguing about which map projection is the best to maintain the "shape" of the Earth.
 # One popular choice is the Robinson
 # So this is how we do it.
@@ -69501,12 +69496,12 @@ dr_surf[vid].mean(dim=['time', 'lev']).plot(transform=ccrs.PlateCarree())  # two
 
 
  
-![png]({{ BASE_PATH }}/images/python_basics_cesm_20_1.png) 
+![png]({{ BASE_PATH }}/assets/img/2020-10-03-python_basics_CESM/python_basics_cesm_20_1.png) 
 
 
 **In [11]:**
 
-{% highlight python %}
+{% highlight python  %}
 # Change 2: Coastline - Land-sea difference of some variables are not that obvisous so we also draw coastal lines for better readability
 
 fig = plt.figure(figsize=(14, 4))
@@ -69526,12 +69521,12 @@ ax.coastlines(color="w") # this line adds coastlines to the coordinate system (a
 
 
  
-![png]({{ BASE_PATH }}/images/python_basics_cesm_21_1.png) 
+![png]({{ BASE_PATH }}/assets/img/2020-10-03-python_basics_CESM/python_basics_cesm_21_1.png) 
 
 
 **In [12]:**
 
-{% highlight python %}
+{% highlight python  %}
 # Change 3: Color Scale - the default color scale of matplotlib is a color-blindness-friendly one but some community like to use their own color scales.
 # For example, this popular White-Blue-Green-Yellow-Red scale:
 
@@ -69556,12 +69551,12 @@ ax.coastlines() # now we use black coastal lines
 
 
  
-![png]({{ BASE_PATH }}/images/python_basics_cesm_22_1.png) 
+![png]({{ BASE_PATH }}/assets/img/2020-10-03-python_basics_CESM/python_basics_cesm_22_1.png) 
 
 
 **In [13]:**
 
-{% highlight python %}
+{% highlight python  %}
 # Change 4: Color Steps or discretized color scale - Some scientists advocate for minimial color shades for better comparison.
 # This is how we do that.
 
@@ -69584,12 +69579,12 @@ ax.coastlines()
 
 
  
-![png]({{ BASE_PATH }}/images/python_basics_cesm_23_1.png) 
+![png]({{ BASE_PATH }}/assets/img/2020-10-03-python_basics_CESM/python_basics_cesm_23_1.png) 
 
 
 **In [14]:**
 
-{% highlight python %}
+{% highlight python  %}
 # Change 5: Titles and Labels - They are simply essential for all plots.
 
 fig = plt.figure(figsize=(14, 4))
@@ -69616,12 +69611,12 @@ plt.title("Surface " + vid + "(global and annual mean)")  # adding a title to th
 
 
  
-![png]({{ BASE_PATH }}/images/python_basics_cesm_24_1.png) 
+![png]({{ BASE_PATH }}/assets/img/2020-10-03-python_basics_CESM/python_basics_cesm_24_1.png) 
 
 
 **In [15]:**
 
-{% highlight python %}
+{% highlight python  %}
 # Bonus Change: Showing smaller values only - sometimes some data are just too large that the color scale, 
 # we would want to put a maximum on the values to show, we set that cap at 6000
 
@@ -69650,7 +69645,7 @@ plt.title("Surface " + vid + " (global and annual mean)")
 
 
  
-![png]({{ BASE_PATH }}/images/python_basics_cesm_25_1.png) 
+![png]({{ BASE_PATH }}/assets/img/2020-10-03-python_basics_CESM/python_basics_cesm_25_1.png) 
 
  
 ## Saving the figure
@@ -69659,7 +69654,7 @@ publication!
 
 **In [16]:**
 
-{% highlight python %}
+{% highlight python  %}
 fig = plt.figure(figsize=(14, 4))
 ax = plt.axes(projection=ccrs.Robinson())
 
@@ -69679,14 +69674,14 @@ plt.savefig("Figure1.png") # we can simply specify the wanted file type in the f
 {% endhighlight %}
 
  
-![png]({{ BASE_PATH }}/images/python_basics_cesm_27_0.png) 
+![png]({{ BASE_PATH }}/assets/img/2020-10-03-python_basics_CESM/python_basics_cesm_27_0.png) 
 
  
 And a png.file is created in under the same directory. 
 
 **In [17]:**
 
-{% highlight python %}
+{% highlight python  %}
 %ls *.png
 
 

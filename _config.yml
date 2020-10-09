@@ -10,11 +10,12 @@ email: kamingfung@mit.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   
 footer_text: >
-  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
+# Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+
 url:  # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/
+baseurl: # the subpath of your site, e.g. /blog/
 last_updated: true # set to true if you want to display last updated in the footer
 
 # -----------------------------------------------------------------------------
@@ -53,6 +54,41 @@ contact_note: >
   Ph.D. | Model Scientist | Hong Konger
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
+
+# Site Author
+author:
+  name             : "Ka Ming Fung"
+  avatar           : "profile.png"
+  bio              : "Postdoctoral Associate at MIT"
+  location         : "Cambridge, MA, USA"
+  employer         :
+  googlescholar    : "https://scholar.google.com/citations?user=OIgTlqEAAAAJ&hl=en"
+  email            : "kamingfung@mit.edu"
+  uri              :
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  github           : "kamingfung"
+  google_plus      :
+  keybase          :
+  instagram        :
+  lastfm           :
+  linkedin         :
+  orcid            : "https://orcid.org/0000-0002-7416-2534"
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  steam            :
+  tumblr           :
+  twitter          : "kamignfung"
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
+  wikipedia        :
 
 # -----------------------------------------------------------------------------
 # Blog
@@ -95,10 +131,13 @@ highlighter: rouge
 highlight_theme: github  # https://github.com/jwarby/jekyll-pygments-themes
 kramdown:
   input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
   syntax_highlighter_opts:
     css_class: 'highlight'
     span:
-      line_numbers: false
+      line_numbers: true
     block:
       line_numbers: false
       start_line: 1
@@ -152,7 +191,9 @@ enable_math:              true
 enable_tooltips:          false
 enable_darkmode:          false
 show_social_icons:        true
+# enable_coderay:           true
 
+incremental:              false
 # -----------------------------------------------------------------------------
 # Library versions
 # -----------------------------------------------------------------------------
