@@ -2,12 +2,12 @@
 layout: post
 title: Basic Tasks for Post-processing and Analyzing CESM Outputs
 date: 2020-10-03 15:09:00
-description: an example of a blog post with some code
+description: some basic examples in processing nc.files and plotting
 tags:
     - python
     - notebook
 ---
-*Created by Ka Ming Fung (kamingfung@mit.edu)[mailto:kamingfung@mit.edu]*
+*Created by Ka Ming Fung ([kamingfung@mit.edu](mailto:kamingfung@mit.edu))*
 
 ###Refereneces:
 <br/>
@@ -45,9 +45,6 @@ shell level.
 {% highlight python  %}
 %ls _data
 {% endhighlight %}
-
-    [0m[01;36m_data[0m@
-
  
 We use the function xr.open_mfdataset from the xarray package. specifying the
 "names, **combining** _method_ and _dimension_ for **concatenation**. Note the

@@ -24,7 +24,15 @@ pagination:
     {% for post in paginator.posts %}
       <li>
         <h3><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }}</p>
+        <p class="post-meta">{{ post.date | date: '%B %-d, %Y' }} </p>
+        <p class="tag-list">
+          {% for tag in post.tags %}
+            <!-- {% assign tag_slug = tag | slugify: "raw" %} -->
+              <!-- href={{ site.baseurl | append: "/tags/" | append: tag_slug | append: "/" }} -->
+              <!-- rel="category tag"> -->
+              #{{ tag }}
+          {% endfor %}
+        </p>
         <p>{{ post.description }}</p>
       </li>
     {% endfor %}

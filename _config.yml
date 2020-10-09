@@ -15,7 +15,7 @@ footer_text: >
 # Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 
 url:  # the base hostname & protocol for your site
-baseurl: /al-folio/ # the subpath of your site, e.g. /blog/
+baseurl: # the subpath of your site, e.g. /blog/
 last_updated: true # set to true if you want to display last updated in the footer
 
 # -----------------------------------------------------------------------------
@@ -118,6 +118,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  tags:
+    output: true
+    permalink: /tags/:path/
 
 news_limit: 5
 
@@ -141,6 +144,13 @@ kramdown:
     block:
       line_numbers: false
       start_line: 1
+    coderay:
+      coderay_wrap: div
+      coderay_line_numbers: inline
+      coderay_line_numbers_start: 1
+      coderay_tab_width: 4
+      coderay_bold_every: 10
+      coderay_css: class
 
 # Includes & excludes
 include: ['_pages']
@@ -193,7 +203,7 @@ enable_darkmode:          false
 show_social_icons:        true
 # enable_coderay:           true
 
-incremental:              false
+incremental:              true
 # -----------------------------------------------------------------------------
 # Library versions
 # -----------------------------------------------------------------------------
