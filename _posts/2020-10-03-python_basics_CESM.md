@@ -69464,7 +69464,13 @@ dr_surf[vid].mean(dim=['lev', 'time']).plot()  # two operations happened here, t
 
 
  
-![png]({{ BASE_PATH }}/images/python_basics_cesm_18_1.png) 
+![png]({{ BASE_PATH }}/assets/img/2020-10-03-python_basics_CESM/python_basics_cesm_18_1.png) 
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-0" src="{{ site.baseurl }}/assets/img/2020-10-03-python_basics_CESM/python_basics_cesm_18_1.png">
+    </div>
+</div>
 
  
 Hurray, we got our nice plot. But who would stop here?
