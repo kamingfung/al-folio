@@ -8,17 +8,28 @@ profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>MIT 48-305</p>
+    <p>Parsons Laboratory</p>
+    <p>Cambridge, MA 02140</p>
+    <p>USA</p>
 
 news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false  # includes social icons at the bottom of the page
+order: -999
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi, I am an **Earth System Scientist** studying sustainable agriculture, air pollution, climate change, and public health using **process-based models** and **observations**.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research improves models to mathematically describe **natural processes** and **human activities** and to better understand their impacts on air quality, environmental health, and climate. For instance, I have used
+* DeNitrification-DeComposition ([DNDC](http://www.dndc.sr.unh.edu/)) to model crop yields of maize-soybean intercropping;
+* [GEOS-Chem](http://acmg.seas.harvard.edu/geos/) to estimate aerosol pollution driven by agricultural ammonia emissions, and;
+* Community Earth System Model ([CESM](http://www.cesm.ucar.edu/)) for modeling soil ammonia emission, and marine sulfur aerosols.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I am also interested in **innovative sustainable alternatives** (e.g., intercropping and biofuels) that could minimize our environmental footprints while secure our demands for food and energy.
+
+Currently, I am a Postdoctoral Associate in [Prof. Colette Heald's group](https://www.healdgroupmit.com/) at Massachusetts Institute of Technology ([MIT](https://mit.edu)). I graduated with a Ph.D. in **Earth and Atmospheric Sciences** from [Prof. Amos Tai's group](http://www.cuhk.edu.hk/sci/essc/tgabi/) at The Chinese University of Hong Kong (CUHK) as well as a M.Sc. in **Mathematics** from CUHK, and a B.Eng. in **Mechanical Engineering** from the Hong Kong University of Science and Technology (HKUST).
+
+Please don't hesitate to [contact me](mailto:kamingfung@mit.edu) if you would like to know more about my works.
+
+

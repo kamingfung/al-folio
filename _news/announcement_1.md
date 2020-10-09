@@ -1,7 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
-inline: true
+title: "Abstract accepted as Poster for AGU Fall Meeting 2020"
+date: 2020-12-10 04:00:00-0400
+inline: false
 ---
 
-A simple inline announcement.
+My abstract title **Exploring natural aerosol formation from DMS oxidation and implications for aerosol forcing** is accepted as *Poster* for **AGU Fall Meeting 2020**! :sparkles: :smile:
