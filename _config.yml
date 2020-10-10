@@ -10,9 +10,7 @@ email: kamingfung@mit.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   
 footer_text: >
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-
-# Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 
 url: https://kamingfung.github.io/ # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
