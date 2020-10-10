@@ -203,7 +203,7 @@ enable_darkmode:          false
 show_social_icons:        true
 # enable_coderay:           true
 
-incremental:              true
+incremental:              false
 # -----------------------------------------------------------------------------
 # Library versions
 # -----------------------------------------------------------------------------
