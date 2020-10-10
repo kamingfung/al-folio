@@ -8,17 +8,16 @@ order: 4
 ---
 Presentation slides and posters are available upon request. Please contact me at [kamingfung@mit.edu](mailto:kamingfung@mit.edu).
 
-<br/>
+----
 
-### Invited Talks
+#### Invited Talks
 
 0. **Modelling and Assessing the Impacts of Intercropping, as a Sustainable Farming Practice, on Food Security, Air Quality, and Public Health**, *Centre for Atmospheric Science Seminars*, Department of Chemistry, University of Cambridge, Cambridge, UK (10 May 2019)
 {: reversed="reversed"}
 
 <br/>
-----
 
-### Conference Talks
+#### Conference Talks
 
 0. **Impacts of Ammonia-Aerosol-Climate Feedbacks on Food Security and Air Quality**, *Community Earth System Model Land Model Working Group Meeting 2020*, Boulder, Colorado, USA (4 Mar 2020)
 0. **Modeling ammonia-aerosol-climate feedback mechanisms using an earth system model: Implications for future food security and air quality,** *American Geophysical Union Fall Meeting 2019*, San Francisco, California, USA (11 Dec 2019)
@@ -30,9 +29,8 @@ Presentation slides and posters are available upon request. Please contact me at
 {: reversed="reversed"}
 
 <br/>
----
 
-### Conference Posters
+#### Conference Posters
 
 
 0. **Co-benefits of Intercropping, as a Sustainable Farming Practice, for Safeguarding Food Supply and Air Quality**,&nbsp;*Gordon Research Conference – Urbanization, Water and Food Security*,&nbsp;Hong Kong (22 Jul 2019)
