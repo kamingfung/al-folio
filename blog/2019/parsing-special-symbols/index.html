@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Ka Ming  Fung | blog</title>
+<title>Ka Ming  Fung | Displaying Special Symbols for Equations and Reactions</title>
 <meta name="description" content="">
 
 <!-- Open Graph -->
@@ -28,7 +28,7 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/blog/2019/parsing-special-symbols/">
 
 <!-- Theming-->
 
@@ -128,8 +128,6 @@
             <a class="nav-link" href="/blog/">
               blog
               
-              <span class="sr-only">(current)</span>
-              
             </a>
           </li>
           
@@ -145,163 +143,68 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <div class="post">
+      
 
-  <div class="header-bar">
-    <h1>Research Blog</h1>
-    <h2>Earth System Modeling | CESM | R | Python</h2>
-  </div>
+<div class="post">
 
+  <header class="post-header">
+    <h1 class="post-title">Displaying Special Symbols for Equations and Reactions</h1>
+    <p class="post-meta">September 24, 2019 • Ka Ming Fung</p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/so-I-have-been-told/">This is the moment</a></h3>
-        <p class="post-meta">October 9, 2020 </p>
-        <p class="tag-list">
-          
-            <!--  -->
-              <!-- href=/tags/personal/ -->
-              <!-- rel="category tag"> -->
-              #personal
-          
-            <!--  -->
-              <!-- href=/tags/causal/ -->
-              <!-- rel="category tag"> -->
-              #causal
-          
-            <!--  -->
-              <!-- href=/tags/sharing/ -->
-              <!-- rel="category tag"> -->
-              #sharing
-          
-        </p>
-        <p>so I have been told Jekyll is better than WordPress</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/python_basics_CESM/">Basic Tasks for Post-processing and Analyzing CESM Outputs</a></h3>
-        <p class="post-meta">October 3, 2020 </p>
-        <p class="tag-list">
-          
-            <!--  -->
-              <!-- href=/tags/python/ -->
-              <!-- rel="category tag"> -->
-              #python
-          
-            <!--  -->
-              <!-- href=/tags/notebook/ -->
-              <!-- rel="category tag"> -->
-              #notebook
-          
-        </p>
-        <p>some basic examples in processing nc.files and plotting</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2019/setting-color-bars/">Setting up Colorbar Colors Using R and ggplot2</a></h3>
-        <p class="post-meta">September 30, 2019 </p>
-        <p class="tag-list">
-          
-            <!--  -->
-              <!-- href=/tags/r/ -->
-              <!-- rel="category tag"> -->
-              #R
-          
-            <!--  -->
-              <!-- href=/tags/ggplot2/ -->
-              <!-- rel="category tag"> -->
-              #ggplot2
-          
-            <!--  -->
-              <!-- href=/tags/colorbars/ -->
-              <!-- rel="category tag"> -->
-              #colorbars
-          
-        </p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2019/parsing-special-symbols/">Displaying Special Symbols for Equations and Reactions</a></h3>
-        <p class="post-meta">September 24, 2019 </p>
-        <p class="tag-list">
-          
-            <!--  -->
-              <!-- href=/tags/r/ -->
-              <!-- rel="category tag"> -->
-              #R
-          
-            <!--  -->
-              <!-- href=/tags/ggplot2/ -->
-              <!-- rel="category tag"> -->
-              #ggplot2
-          
-            <!--  -->
-              <!-- href=/tags/symbols/ -->
-              <!-- rel="category tag"> -->
-              #symbols
-          
-        </p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2019/barchart-with-labels/">Bar Charts with Labels</a></h3>
-        <p class="post-meta">September 17, 2019 </p>
-        <p class="tag-list">
-          
-            <!--  -->
-              <!-- href=/tags/r/ -->
-              <!-- rel="category tag"> -->
-              #R
-          
-            <!--  -->
-              <!-- href=/tags/ggplot2/ -->
-              <!-- rel="category tag"> -->
-              #ggplot2
-          
-        </p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2019/atlantic-centric-map/">Plotting Atlantic Centered Map Using R and ggplot2</a></h3>
-        <p class="post-meta">September 10, 2019 </p>
-        <p class="tag-list">
-          
-            <!--  -->
-              <!-- href=/tags/r/ -->
-              <!-- rel="category tag"> -->
-              #R
-          
-            <!--  -->
-              <!-- href=/tags/ggplot2/ -->
-              <!-- rel="category tag"> -->
-              #ggplot2
-          
-            <!--  -->
-              <!-- href=/tags/visualization/ -->
-              <!-- rel="category tag"> -->
-              #visualization
-          
-        </p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2019/about-ka-ming/">My name is "Ka-ming"</a></h3>
-        <p class="post-meta">September 3, 2019 </p>
-        <p class="tag-list">
-          
-        </p>
-        <p>about my name and Cantonese</p>
-      </li>
-    
-  </ul>
+  <article class="post-content">
+    <p>Created by Ka Ming Fung (<a href="mailto:kamingfung@mit.edu">kamingfung@mit.edu</a>)</p>
+
+<p>This is an example to show special characters and formats in ggplot2.</p>
+
+<p>In the following example, we are going to show a chemical reaction in a
+plot created by “ggplot2”. It may seem straightforward but the way R
+handling it is not. Let’s see the codes.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span><span class="w">  </span><span class="c1"># for plotting</span><span class="w">
+
+</span><span class="c1"># setting up the base plot</span><span class="w">
+</span><span class="n">g</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ggplot</span><span class="p">()</span><span class="w">
+</span><span class="n">g</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">g</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">geom_text</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'S(IV)["(aq)"]~"+"~H[2]*O[2*"(aq)"] %-&gt;% SO[4*"(aq)"]^"2–"~(mode~1)'</span><span class="p">),</span><span class="w"> </span><span class="n">parse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">T</span><span class="p">)</span><span class="w">
+
+</span><span class="n">g</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><img src="/assets/img/2019-09-24-parsing-special-symbols/unnamed-chunk-1-1.png" alt="" /><!-- --></p>
+
+<p>In the code example, we try to pass a string defined for “label” into
+the “R” basic function “parse” to convert plain text into an “plot.math”
+object, i.e., a chemical equation in this example. There are some
+strange symbols in the string and they all carry special function -</p>
+
+<ul>
+  <li>round brackets “(“ and “)” are quoted so that “parse” considers them
+normal characters.</li>
+  <li>”~” and “*” indicate whether linking characters are separated by a
+space or not, respectively.</li>
+  <li>”~” can sometimes be replaced by a space character “  “ if there is
+no ambiguity for “parse”.</li>
+  <li>”[” and “]” are used to put the containing characters a subscript.</li>
+  <li>”^” is used for super-scripting, and, to put multiple characters
+into one superscription, we need to quote the characters using
+quotation marks “””.</li>
+  <li>For an expression with both sub- and superscription, “parse”
+considers them orderly as sub- &gt; superscription.</li>
+  <li>Finally, “%-&gt;%” is the arrow symbol, and a list of such special
+equation symbols can be found in <a href="https://astrostatistics.psu.edu/su07/R/html/grDevices/html/plotmath.html">this website of
+plotmath</a>.</li>
+</ul>
+
+  </article>
 
   
-
 
 </div>
 

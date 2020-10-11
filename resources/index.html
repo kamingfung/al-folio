@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Ka Ming  Fung | blog</title>
+<title>Ka Ming  Fung | resources</title>
 <meta name="description" content="">
 
 <!-- Open Graph -->
@@ -28,7 +28,7 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/resources/">
 
 <!-- Theming-->
 
@@ -115,20 +115,20 @@
           
           
           
-          <li class="nav-item ">
+          <li class="nav-item active">
               <a class="nav-link" href="/resources/">
                 resources
+                
+                <span class="sr-only">(current)</span>
                 
               </a>
           </li>
           
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
-              
-              <span class="sr-only">(current)</span>
               
             </a>
           </li>
@@ -147,161 +147,90 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>Research Blog</h1>
-    <h2>Earth System Modeling | CESM | R | Python</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">resources</h1>
+    <p class="post-description">Useful stuff for research</p>
+  </header>
+
+  <article>
+    <hr />
+
+<h2 id="datasets">Datasets</h2>
+
+<p><em>The below datasets or documentation are open to all. Hope it will benefit your research.</em></p>
+
+<h4 id="climate">Climate</h4>
+
+<ul>
+  <li><a href="https://www.esrl.noaa.gov/psd/data/gridded/data.ncep.reanalysis2.surface.html">National Centers for Environmental Predictions (NCEP) Reanalysis II: air temperature, precipitation water, and other meteorological variables at various pressure levels</a> (daily &amp; monthly over 1979–present; 2.5º-by-2.5º) [<a href="https://journals.ametsoc.org/doi/10.1175/BAMS-83-11-1631">Kanamitsu et al, 2012</a>]</li>
+</ul>
+
+<h4 id="ammonia-nh3">Ammonia (NH<sub>3</sub>)</h4>
+
+<ul>
+  <li>
+    <p><a href="https://doi.pangaea.de/10.1594/PANGAEA.894736">IASI satellite-measured column concentration</a> (0.01º-by-0.01º) <a href="&quot;https://www.nature.com/articles/s41586-018-0747-1&quot;">[Van Damme et al. 2018]</a></p>
+  </li>
+  <li>
+    <p><a href="http://nadp.slh.wisc.edu/data/AMoN/">Ammonia Monitoring Network (AMoN) in situ ground measurement of the 2-m concentration</a> (site data) <a href="http://nadp.slh.wisc.edu/amon/sites/AMoNMetadata.pdf">[National Atmospheric Deposition Program 2014]</a></p>
+  </li>
+  <li>
+    <p><a href="https://mycuhk-my.sharepoint.com/:u:/g/personal/1155013803_link_cuhk_edu_hk/EaAlyS_IyKlHi5Otu7NK56IBoQLZukLFyJ6pd8NMHrEMgQ?e=UKCEGs">MASAGE_NH3 – a global agricultural emission inventory</a> (monthly; 2º-by-2.5) [<a href="http://acmg.seas.harvard.edu/publications/2014/paulot2014_emissions.pdf">Paulot et al. 2014</a>]</p>
+  </li>
+  <li>
+    <p><a href="(http://www.phy.pku.edu.cn/~acaq/data/nh3_agr_emis.html)">A Chinese agricultural emission inventory by Peking University</a> (monthly; 0.5°×0.667°) [<a href="https://www.atmos-chem-phys.net/18/339/2018/">Zhang et al. 2018</a>]</p>
+  </li>
+</ul>
+
+<h4 id="nitrogen-dioxide-no2">Nitrogen Dioxide (NO<sub>2</sub>)</h4>
+
+<ul>
+  <li><a href="https://nelson.wisc.edu/sage/data-and-models/OMI_NO2.php">Gridded concentration derived from OMI satellite measurement by the University of Wisconsin-Madison</a> (monthly over 2006–2018; 12 km-by-12 km) [<a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2015JD023316">Harkey et al. 2015</a>]</li>
+</ul>
+
+<h4 id="fine-particulate-matter-pm25">Fine Particulate Matter (PM<sub>2.5</sub>)</h4>
+
+<ul>
+  <li><a href="https://pubs.acs.org/doi/suppl/10.1021/acs.est.8b02864">A global concentration estimate based on the Bayesian hierarchical model</a> (annually over 2010–2016; 0.1° × 0.1°) [<a href="https://pubs.acs.org/doi/10.1021/acs.est.8b02864">Shaddick et al. 2018</a>]</li>
+</ul>
+
+<h4 id="agriculture">Agriculture</h4>
+
+<ul>
+  <li>
+    <p><a href="https://nelson.wisc.edu/sage/data-and-models/crop-calendar-dataset/index.php">Crop calendar dataset by the University of Wisconsin-Madison</a> (5’-by-5’ &amp; 0.5º-by-0.5º ) [<a href="https://nelson.wisc.edu/sage/data-and-models/crop-calendar-dataset/sacksetalGEB2010.pdf">Sacks et al. 2010</a>]</p>
+  </li>
+  <li>
+    <p><a href="(http://www.earthstat.org/harvested-area-yield-175-crops/)">Harvest area and yield for 175 Crops by EarthStat</a> (for the year 2000; 5’-by-5’) [<a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2007GB002947">Monfreda et al. 2008</a>]</p>
+  </li>
+  <li>
+    <p><a href="http://www.earthstat.org/crop-allocation-food-feed-nonfood/">Crop allocation to food, feed, and nonfood by EarthStat</a> (5’-by-5’) [<a href="http://iopscience.iop.org/article/10.1088/1748-9326/8/3/034015/meta">Cassidy et al. 2013</a>]</p>
+  </li>
+  <li>
+    <p><a href="http://www.earthstat.org/nutrient-application-major-crops/">Nutrient Application for Major Crops</a> (for the year 2000; 5’-by-5’) [<a href="https://www.nature.com/articles/nature11420">Mueller et al. 2012</a>]</p>
+  </li>
+</ul>
+
+<h4 id="soil">Soil</h4>
+
+<ul>
+  <li><a href="http://www.fao.org/soils-portal/soil-survey/soil-maps-and-databases/harmonized-world-soil-database-v12/en/">Harmonized World Soil Database v1.2</a> [<a href="http://pure.iiasa.ac.at/id/eprint/13290/">Fischer et al. 2008</a>]
+    <ul>
+      <li>Land mask, terrain elevation, slope  (30”-by-30” &amp; 5’-by-5’)</li>
+      <li>Land use and land cover: rain-fed cultivated land, irrigated land, forest land, grass/scrub/woodland, built-up land (residential/infrastructure), barren/very sparsely vegetated land, or water bodies  (5’-by-5’)</li>
+      <li>Soil qualities for crop production: nutrient availability, nutrient retention capacity, rooting conditions, oxygen availability for roots, excess salts, toxicity, and workability (5’-by-5’)</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="geography">Geography</h4>
+
+<ul>
+  <li><a href="https://gadm.org/about.html">GADM database of Global Administrative Areas</a> (shapefiles; check out my <a href="https://github.com/kamingfung/CLM-Analysis-Tools">GitHub repo</a> on how to use it in R)</li>
+</ul>
 
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/so-I-have-been-told/">This is the moment</a></h3>
-        <p class="post-meta">October 9, 2020 </p>
-        <p class="tag-list">
-          
-            <!--  -->
-              <!-- href=/tags/personal/ -->
-              <!-- rel="category tag"> -->
-              #personal
-          
-            <!--  -->
-              <!-- href=/tags/causal/ -->
-              <!-- rel="category tag"> -->
-              #causal
-          
-            <!--  -->
-              <!-- href=/tags/sharing/ -->
-              <!-- rel="category tag"> -->
-              #sharing
-          
-        </p>
-        <p>so I have been told Jekyll is better than WordPress</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/python_basics_CESM/">Basic Tasks for Post-processing and Analyzing CESM Outputs</a></h3>
-        <p class="post-meta">October 3, 2020 </p>
-        <p class="tag-list">
-          
-            <!--  -->
-              <!-- href=/tags/python/ -->
-              <!-- rel="category tag"> -->
-              #python
-          
-            <!--  -->
-              <!-- href=/tags/notebook/ -->
-              <!-- rel="category tag"> -->
-              #notebook
-          
-        </p>
-        <p>some basic examples in processing nc.files and plotting</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2019/setting-color-bars/">Setting up Colorbar Colors Using R and ggplot2</a></h3>
-        <p class="post-meta">September 30, 2019 </p>
-        <p class="tag-list">
-          
-            <!--  -->
-              <!-- href=/tags/r/ -->
-              <!-- rel="category tag"> -->
-              #R
-          
-            <!--  -->
-              <!-- href=/tags/ggplot2/ -->
-              <!-- rel="category tag"> -->
-              #ggplot2
-          
-            <!--  -->
-              <!-- href=/tags/colorbars/ -->
-              <!-- rel="category tag"> -->
-              #colorbars
-          
-        </p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2019/parsing-special-symbols/">Displaying Special Symbols for Equations and Reactions</a></h3>
-        <p class="post-meta">September 24, 2019 </p>
-        <p class="tag-list">
-          
-            <!--  -->
-              <!-- href=/tags/r/ -->
-              <!-- rel="category tag"> -->
-              #R
-          
-            <!--  -->
-              <!-- href=/tags/ggplot2/ -->
-              <!-- rel="category tag"> -->
-              #ggplot2
-          
-            <!--  -->
-              <!-- href=/tags/symbols/ -->
-              <!-- rel="category tag"> -->
-              #symbols
-          
-        </p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2019/barchart-with-labels/">Bar Charts with Labels</a></h3>
-        <p class="post-meta">September 17, 2019 </p>
-        <p class="tag-list">
-          
-            <!--  -->
-              <!-- href=/tags/r/ -->
-              <!-- rel="category tag"> -->
-              #R
-          
-            <!--  -->
-              <!-- href=/tags/ggplot2/ -->
-              <!-- rel="category tag"> -->
-              #ggplot2
-          
-        </p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2019/atlantic-centric-map/">Plotting Atlantic Centered Map Using R and ggplot2</a></h3>
-        <p class="post-meta">September 10, 2019 </p>
-        <p class="tag-list">
-          
-            <!--  -->
-              <!-- href=/tags/r/ -->
-              <!-- rel="category tag"> -->
-              #R
-          
-            <!--  -->
-              <!-- href=/tags/ggplot2/ -->
-              <!-- rel="category tag"> -->
-              #ggplot2
-          
-            <!--  -->
-              <!-- href=/tags/visualization/ -->
-              <!-- rel="category tag"> -->
-              #visualization
-          
-        </p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2019/about-ka-ming/">My name is "Ka-ming"</a></h3>
-        <p class="post-meta">September 3, 2019 </p>
-        <p class="tag-list">
-          
-        </p>
-        <p>about my name and Cantonese</p>
-      </li>
-    
-  </ul>
-
-  
-
+  </article>
 
 </div>
 
