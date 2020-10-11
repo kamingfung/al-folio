@@ -7,7 +7,7 @@ author: Ka Ming Fung
 tags: personal causal sharing
 ---
 
-So I have been told there is a new tool (new to me :wink:) trending among academians. I was casually checking it out last night, and now, I have just finished my 12-hour journey of website migration. Not to bore you to death by giving you all the geeky :eyeglasses: and technical details (including how I googled and picked the nicest templates, extracted the good elements, studied their liquid syntax & HTML codes, reassembled them, fixed countless bugs, and ran numerous tests...), I will discuss some major advantages of Jekyll, as a static web page generator, over WordPress.
+So I have been told there is a new tool (new to me :wink:) trending among academicians. I was casually checking it out last night, and now, I have just finished my 12-hour journey of website migration. Not to bore you to death by giving you all the geeky :eyeglasses: and technical details (including how I googled and picked the nicest templates, extracted the good elements, studied their liquid syntax & HTML codes, reassembled them, fixed countless bugs, and ran numerous tests...), I will discuss some major advantages of Jekyll, as a static web page generator, over WordPress.
 
 
 
@@ -34,7 +34,7 @@ After some research, aka skimming though the first page of Google Search results
 
 ### One size doesn't fit all
 
-I am sure that somewhere out there a newer and fancier tool have already been invited. I also have to confess that learning Jekyll was not my sweatest moment, and I have invested quite some time (properly longer than I should have). It's highly customizable but not at all straight-forward. But, after all, I am happy to pay such as a small cost and appreciate Jekyll's letting me own my contents and, together with GitHub, enabling me to host an ad-free open-source website.
+I am sure that somewhere out there a newer and fancier tool have already been invited. I also have to confess that learning Jekyll was not my sweetest moment, and I have invested quite some time (properly longer than I should have). It's highly customizable but not at all straight-forward. But, after all, I am happy to pay such as a small cost and appreciate Jekyll's letting me own my contents and, together with GitHub, enabling me to host an ad-free open-source website.
 
 
 I think Jekyll will make maintaining my website easier. If you are considering switching to Jekyll but still in doubt, free feel to connect with me. I will be more than happy to share with you my experience.
